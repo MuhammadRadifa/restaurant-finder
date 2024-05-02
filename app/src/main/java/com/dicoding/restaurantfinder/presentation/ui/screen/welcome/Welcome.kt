@@ -71,6 +71,7 @@ fun WelcomeScreen(
         Column(
             Modifier
                 .padding(20.dp)
+                .height(300.dp)
                 .clip(shape = RoundedCornerShape(10))
                 .background(color = Color.White)
         ) {

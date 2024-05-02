@@ -35,6 +35,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
         }
 
         debug {
@@ -44,6 +45,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
 
     testOptions {
@@ -53,6 +55,8 @@ android {
     buildFeatures {
         buildConfig = true
     }
+
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -66,17 +70,19 @@ android {
 dependencies {
 
     //database
-    implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.runner)
     implementation(libs.core.ktx)
-    kapt("androidx.room:room-compiler:2.6.1")
+    //noinspection KaptUsageInsteadOfKsp
+    kapt(libs.androidx.room.compiler)
 
     //retrofit
     //network retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -18,5 +18,5 @@ interface IRestaurantRepository {
     suspend fun addFavorite(entity: FavoriteModel): Unit
     fun getAllFavorites(): Flow<List<FavoriteModel>>
     fun getFavoriteById(id: String): Flow<FavoriteModel>
-    suspend fun deleteFavoriteByName(entity: FavoriteModel): Unit
+    suspend fun deleteFavoriteByName(entity: FavoriteModel)
 }

@@ -1,5 +1,6 @@
 package com.dicoding.restaurantfinder.presentation.ui.screen.home
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dicoding.core.data.source.remote.ResponseState
@@ -30,6 +31,7 @@ class HomeViewModel(
                 )
 
             }catch (e: Exception){
+                Log.e("HomeViewModel", "getAllRestaurant: $e")
                 _restaurant.value = _restaurant.value.copy(
                     data = null,
                     loading = false,

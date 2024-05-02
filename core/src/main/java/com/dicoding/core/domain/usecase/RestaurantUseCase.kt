@@ -14,7 +14,7 @@ interface RestaurantUseCase {
     suspend fun postReview(body: PostReview): List<CustomerReviewsItemModel>
     suspend fun saveUsername(token: String)
     fun getUsername(): Flow<String?>
-    suspend fun addFavorite(entity: FavoriteModel): Unit
+    suspend fun addFavorite(entity: FavoriteModel)
     fun getAllFavorites(): Flow<List<FavoriteModel>>
     fun getFavoriteById(id: String): Flow<FavoriteModel>
     suspend fun deleteFavoriteByName(entity: FavoriteModel)

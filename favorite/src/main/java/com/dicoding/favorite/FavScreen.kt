@@ -1,5 +1,6 @@
 package com.dicoding.favorite
 
+import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -11,8 +12,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.dicoding.core.utils.FavoriteViewModel
-import org.koin.androidx.compose.koinViewModel
 
 /*
  * this class is used by reflection
@@ -21,9 +20,10 @@ import org.koin.androidx.compose.koinViewModel
 
 @Suppress("unused")
 @Composable
-fun FavoriteScreen(PaddingValues: PaddingValues,navigationToDetail: (String) -> Unit){
+fun FavoriteScreen(paddingValues: PaddingValues, navigationToDetail: (String) -> Unit){
+    Log.i("FavoriteScreen", paddingValues.toString())
     Column(modifier = Modifier.padding(10.dp)) {
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(10.dp))
         Text(text = "Your Favorite Restaurant", fontSize = 24.sp, fontWeight = FontWeight.Bold)
         FavoriteList(navigationToDetail = navigationToDetail)
     }
