@@ -1,10 +1,8 @@
 package com.dicoding.restaurantfinder.presentation.ui.screen.search
 
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dicoding.core.data.source.remote.ResponseState
-import com.dicoding.core.data.source.remote.response.RestaurantsItem
 import com.dicoding.core.domain.model.RestaurantsItemModel
 import com.dicoding.core.domain.usecase.RestaurantUseCase
 import kotlinx.coroutines.flow.MutableStateFlow

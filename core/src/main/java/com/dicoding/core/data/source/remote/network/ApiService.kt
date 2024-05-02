@@ -5,8 +5,6 @@ import com.dicoding.core.data.source.remote.response.AddRestaurantResponse
 import com.dicoding.core.data.source.remote.response.DetailRestaurantResponse
 import com.dicoding.core.data.source.remote.response.ListRestaurantResponse
 import com.dicoding.core.data.source.remote.response.SearchRestaurantResponse
-import kotlinx.coroutines.flow.Flow
-import okhttp3.RequestBody
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Headers

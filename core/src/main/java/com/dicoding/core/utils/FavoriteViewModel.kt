@@ -2,7 +2,6 @@ package com.dicoding.core.utils
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dicoding.core.data.source.local.room.FavoriteEntity
 import com.dicoding.core.domain.model.FavoriteModel
 import com.dicoding.core.domain.usecase.RestaurantUseCase
 import kotlinx.coroutines.flow.Flow

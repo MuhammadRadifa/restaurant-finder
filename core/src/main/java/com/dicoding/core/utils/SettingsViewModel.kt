@@ -24,7 +24,7 @@ class SettingsViewModel(
         }
     }
 
-    fun getUsername() {
+    private fun getUsername() {
         viewModelScope.launch {
             restaurantUseCase.getUsername().collect{
                 _username.value = it

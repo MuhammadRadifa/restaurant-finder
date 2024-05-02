@@ -7,7 +7,7 @@ data class NavigationItem(
     val icon:Int,
 )
 
-val itemNavigation = listOf<NavigationItem>(
+val itemNavigation = listOf(
     NavigationItem(
         title = "Favorite",
         icon = R.drawable.baseline_favorite_24

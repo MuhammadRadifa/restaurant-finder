@@ -1,13 +1,9 @@
 package com.dicoding.restaurantfinder.presentation.ui.screen.detail
 
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dicoding.core.data.common.PostReview
 import com.dicoding.core.data.source.remote.ResponseState
-import com.dicoding.core.data.source.remote.response.CustomerReviewsItem
-import com.dicoding.core.data.source.remote.response.Restaurant
-import com.dicoding.core.data.source.remote.response.RestaurantsItem
 import com.dicoding.core.domain.model.CustomerReviewsItemModel
 import com.dicoding.core.domain.model.DetailRestaurantModel
 import com.dicoding.core.domain.usecase.RestaurantUseCase

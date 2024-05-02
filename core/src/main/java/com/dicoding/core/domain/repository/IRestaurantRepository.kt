@@ -1,12 +1,6 @@
 package com.dicoding.core.domain.repository
 
 import com.dicoding.core.data.common.PostReview
-import com.dicoding.core.data.source.local.room.FavoriteEntity
-import com.dicoding.core.data.source.remote.response.AddRestaurantResponse
-import com.dicoding.core.data.source.remote.response.CustomerReviewsItem
-import com.dicoding.core.data.source.remote.response.DetailRestaurantResponse
-import com.dicoding.core.data.source.remote.response.ListRestaurantResponse
-import com.dicoding.core.data.source.remote.response.SearchRestaurantResponse
 import com.dicoding.core.domain.model.CustomerReviewsItemModel
 import com.dicoding.core.domain.model.DetailRestaurantModel
 import com.dicoding.core.domain.model.FavoriteModel

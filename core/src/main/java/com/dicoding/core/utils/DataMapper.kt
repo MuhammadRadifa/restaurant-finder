@@ -2,7 +2,6 @@ package com.dicoding.core.utils
 
 import com.dicoding.core.data.source.local.room.FavoriteEntity
 import com.dicoding.core.data.source.remote.response.CustomerReviewsItem
-import com.dicoding.core.data.source.remote.response.DetailRestaurantResponse
 import com.dicoding.core.data.source.remote.response.Restaurant
 import com.dicoding.core.data.source.remote.response.RestaurantsItem
 import com.dicoding.core.domain.model.CustomerReviewsItemModel

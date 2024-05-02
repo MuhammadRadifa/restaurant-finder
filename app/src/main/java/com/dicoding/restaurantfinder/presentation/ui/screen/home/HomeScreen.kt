@@ -1,6 +1,5 @@
 package com.dicoding.restaurantfinder.presentation.ui.screen.home
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,11 +28,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 import com.dicoding.core.BuildConfig
-import com.dicoding.core.data.common.Screen
-import com.dicoding.core.data.source.remote.response.RestaurantsItem
 import com.dicoding.core.domain.model.RestaurantsItemModel
 import com.dicoding.restaurantfinder.R
 import org.koin.androidx.compose.koinViewModel

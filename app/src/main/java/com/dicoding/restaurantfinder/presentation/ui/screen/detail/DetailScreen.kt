@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -23,11 +22,9 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Send
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
@@ -57,11 +54,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import com.dicoding.core.BuildConfig
-import com.dicoding.core.data.source.local.preferences.SettingPreferences
-import com.dicoding.core.data.source.local.room.FavoriteEntity
-
-import com.dicoding.core.data.source.remote.response.CustomerReviewsItem
-import com.dicoding.core.data.source.remote.response.Restaurant
 import com.dicoding.core.domain.model.CustomerReviewsItemModel
 import com.dicoding.core.domain.model.DetailRestaurantModel
 import com.dicoding.core.domain.model.FavoriteModel
@@ -233,7 +225,7 @@ fun CardDescription(data: DetailRestaurantModel) {
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Text(
-                        text = "${data.rating}",
+                        text = data.rating,
                         color = Color.Black,
                         fontSize = 14.sp,
                     )
