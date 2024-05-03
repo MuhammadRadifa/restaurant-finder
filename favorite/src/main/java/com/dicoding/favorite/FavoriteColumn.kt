@@ -30,8 +30,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import com.dicoding.core.BuildConfig
-import com.dicoding.core.data.source.local.room.FavoriteEntity
-import com.dicoding.core.data.source.remote.response.RestaurantsItem
 import com.dicoding.core.domain.model.FavoriteModel
 import com.dicoding.core.utils.FavoriteViewModel
 import com.dicoding.restaurantfinder.R
